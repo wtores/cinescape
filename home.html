@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CINESCAPE | INICIO</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <section id="cont-home">
+        <div class="header">
+            <img onclick="panelLateral()" src="img/menu.png" alt="logo">
+            <a href="#"><img src="img/icon-logo.png" alt="Icon Logo"></a>
+            <a href="#"><img src="img/user.png" alt="Icon User"></a>
+        </div>
+        <div class="filtros">
+            <button class="active">Aventuras</button>
+            <button>Animadas</button>
+            <button>Drama</button>
+        </div>
+
+        <p id="copy-category">
+            Descubre emocionantes peliculas de aventura llenas de acción, peligro y exóticos lugares en CINESCAPE
+        </p>
+
+        <div class="cont-aventuras">
+            <h2>Estrenos: </h2>
+            <hr>
+            <div class="cont-caratulas">
+                <button class="caratula"> <img src="img/guardianes3.jpg" alt="Guardianes de la Galaxia"></button>
+                <button class="caratula"> <img onclick="caratula()"src="img/mariobros.jpg" alt="Mario bros"></button>
+                <button class="caratula"> <img src="img/flash.jpg" alt="Flash"></button>
+                <button class="caratula"> <img src="img/flash.jpg" alt="Flash"></button>
+            </div>
+            <h2>Proximamente: </h2>
+            <hr>
+            <div class="cont-caratulas">
+                <button class="caratula"> <img src="img/flash.jpg" alt="Flash"></button>
+                <button class="caratula"> <img src="img/megalodon.jpg" alt="Megalodon"></button>
+                <button class="caratula"> <img src="img/barbie.jpeg" alt="Barbie"></button>
+                <button class="caratula"> <img src="img/barbie.jpeg" alt="Barbie"></button>
+            </div>
+        </div>
+
+        <!-- Panel lateral -->
+
+        <div id="panel-Lateral">
+            <img onclick="panelLateral()" src="img/menu.png" alt="logo">
+            <h2>Editar Mi cuenta</h2>
+            <ul>
+                <a href="#">-Home</a>
+                <a href="#">-Aventura</a>
+                <a href="#">-Animadas</a>
+                <a href="#">-Drama</a>
+                <a href="#">-Comedia</a>
+                <a href="#">-Ficción</a>
+                <a href="#">-Nacionales</a>
+            </ul>
+
+            <a class="cerrarSesion" href="index.html">Cerrar Sesión</a>
+        </div>
+
+
+
+        <!-- Ventana modal -->
+        <div id="modal-pelicula">
+            <button onclick="cerrar()">X</button>
+            <img  src="img/mariobros.jpg" alt="Mario" class="caratula-img">
+            <img src="img/boton_play1.png" alt="Icono de play" class="btn-play">
+        <h2>Super Mario <br>
+            Bros. La pelicula </h2>
+            <hr>
+            <p>Estreno: 06-Abril-2023</p>
+            <p>Accion, comedia</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam tempora dolorum reprehenderit nesciunt. Possimus tempora dolores odio? Quia, ipsum magnam recusandae, animi at maxime quibusdam delectus debitis praesentium in repellat quae voluptatibus, dolorem doloribus labore iure dolore a nam minima?</p>
+
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
